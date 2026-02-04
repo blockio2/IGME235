@@ -1,0 +1,73 @@
+body{
+    background-image: url("images/stardew-junimo.png");
+    background-size: 100px;
+    background-color:rgb(255, 216, 200);
+    margin: 0 20vw;
+    border: 5px solid rgb(65, 27, 13);
+}
+
+header, footer{
+    background-color:rgb(232, 101, 53);
+}
+
+main{
+    background-color:rgb(232, 152, 123);
+    border-top: 3px solid rgb(65, 27, 13);
+    border-bottom: 3px solid rgb(65, 27, 13);
+}
+h1{
+    font-size:3em;
+    text-align:center;
+    padding:.5em 0;
+    margin:0;
+}
+h2, h3{
+    font-family: serif;
+    margin:0;
+    padding: 0.5em 1em 0 1em;
+}
+img + h2{
+    border-top: 3px solid rgb(65, 27, 13);
+}
+
+
+.imagelist{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.imagelist img{
+    width: 15vw;   
+    display:block;
+    border: 1px solid black;
+}
+.imagelist figure{
+    margin:0 2em 1em 0;
+}
+
+
+nav#footerlinks{
+    padding:1em 0;
+    display:flex;
+    justify-content: center;
+}
+
+p,ul,a{
+    font-family: serif;
+    padding: 0 2em;
+}
+p{
+    text-indent:2em;
+}
+
+
+img.bigimage{
+    width:20vw;
+    border: 5px solid rgb(65, 27, 13);
+    margin: 1em auto;
+    display: block;
+}
+img#selfie{
+    background-image: url("images/me-background.png");
+}
+/*rgb(65, 27, 13);*/

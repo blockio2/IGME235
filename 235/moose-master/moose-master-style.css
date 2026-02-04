@@ -1,0 +1,22 @@
+h1 { 
+    color:rgb(152, 26, 181);
+    font-family: sans-serif;
+    border-bottom: 1px solid rgb(111, 18, 132);
+    }
+h1,h2{
+    margin-left:5px;
+}
+p{
+    margin-left:15px;
+    margin-right:100px;
+}
+blockquote { 
+    background-color: lightgray;
+    padding: 1rem;
+    }
+#game-cards{
+    height: 300px;
+}
+#game-box{
+    height:300px;
+}
