@@ -1,11 +1,16 @@
+/*
+Main Background
+Background image is tiled using a transparent png with three of the junimo creatures in a diagonal
+*/
 body{
     background-image: url("images/stardew-junimo.png");
     background-size: 100px;
     background-color:rgb(255, 216, 200);
-    margin: 0 20vw;
+    margin: auto 20vw;
     border: 5px solid rgb(65, 27, 13);
 }
 
+/*Colors and borders for the content */
 header, footer{
     background-color:rgb(232, 101, 53);
 }
@@ -15,6 +20,15 @@ main{
     border-top: 3px solid rgb(65, 27, 13);
     border-bottom: 3px solid rgb(65, 27, 13);
 }
+
+/*Text */
+p,ul,a{
+    font-family: serif;
+    padding: 0 2em;
+    font-size:1.2em;
+}
+
+/*Heading style */
 h1{
     font-size:3em;
     text-align:center;
@@ -25,49 +39,80 @@ h2, h3{
     font-family: serif;
     margin:0;
     padding: 0.5em 1em 0 1em;
+    clear: left;
 }
-img + h2{
-    border-top: 3px solid rgb(65, 27, 13);
+h2{
+    font-size:2em;
 }
 
 
+/*Selfie styling */
+img.bigimage{
+    float:left;
+    width: 10vw;
+    height: 10vw;
+    border: 5px solid rgb(65, 27, 13);
+    margin: 1em 1em 0em 2em;
+}
+img#selfie{
+    background-image: url("images/me-background.png");
+}
+
+
+
+/*Style for the three class projects */
 .imagelist{
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
+    width:60vw;
 }
-.imagelist img{
-    width: 15vw;   
+.imagelist a{
+    padding: 0;
+ }
+.imagelist img{  
+    width: 15vw;
     display:block;
-    border: 1px solid black;
+    margin-bottom: 1em;
 }
 .imagelist figure{
-    margin:0 2em 1em 0;
+    margin:1em 2em 1em 0;
+    padding-top: 0px;
+    padding-bottom: 1em;
+}
+.imagelist .list-caption{
+    margin:0;
+    text-align: center;
+    font-size:1.5vw;
+
+    padding-top: .5em;
+    border-top: 2px solid rgb(65, 27, 13);
+}
+.imagelist img:hover{
+    border:2px solid rgb(65, 27, 13);
 }
 
 
+/*Links */
 nav#footerlinks{
     padding:1em 0;
     display:flex;
     justify-content: center;
 }
+a:link{
+    color: rgb(132, 53, 24);
+}
+a:visited{
+    color: rgb(52, 22, 11);
+}
+a:focus{
+    color: rgb(132, 53, 24);
+}
+a:hover{
+    background-color: rgba(52, 22, 11, .1);
+}
+a:active{
+    color: rgb(132, 53, 24);
+}
 
-p,ul,a{
-    font-family: serif;
-    padding: 0 2em;
-}
-p{
-    text-indent:2em;
-}
 
-
-img.bigimage{
-    width:20vw;
-    border: 5px solid rgb(65, 27, 13);
-    margin: 1em auto;
-    display: block;
-}
-img#selfie{
-    background-image: url("images/me-background.png");
-}
-/*rgb(65, 27, 13);*/
