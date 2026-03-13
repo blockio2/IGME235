@@ -5,20 +5,42 @@ Background image is tiled using a transparent png with three of the junimo creat
 body{
     background-image: url("images/stardew-junimo.png");
     background-size: 100px;
-    background-color:rgb(255, 216, 200);
+    background-color:rgb(246, 232, 227);
     margin: auto 20vw;
-    border: 5px solid rgb(65, 27, 13);
+    /*border: 5px solid rgb(65, 27, 13);*/
+}
+#background-cover{
+    width:300%;
+    height:100%;
+    
+    opacity: .8;
+    background-color:rgb(241, 204, 190);    
+    position:absolute;
+    z-index: -10;
+
+    transform: translateX(-1000px);
+
 }
 
 /*Colors and borders for the content */
 header, footer{
-    background-color:rgb(232, 101, 53);
+    background-color:rgb(227, 172, 124);
+}
+header{
+    height: 14vh;
+}
+footer{
+    height:8vh; 
 }
 
 main{
-    background-color:rgb(232, 152, 123);
+    background-color:rgb(241, 204, 190);
     border-top: 3px solid rgb(65, 27, 13);
     border-bottom: 3px solid rgb(65, 27, 13);
+
+    height:78vh;
+
+    overflow:scroll;
 }
 
 /*Text */
@@ -30,9 +52,9 @@ p,ul,a{
 
 /*Heading style */
 h1{
-    font-size:3em;
+    font-size:3.5vw;
     text-align:center;
-    padding:.5em 0;
+    padding:3vh 0;
     margin:0;
 }
 h2, h3{

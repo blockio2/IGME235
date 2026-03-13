@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/spec-style.css" rel="stylesheet">
+    <style>
+        pre{
+            font-family: 'Times New Roman', Times, serif;
+            margin-top:0;
+        }
+        h2{
+            margin-bottom:0;
+            border-bottom:2px solid black;
+        }
+        #documentation-links{
+            display:flex;
+            column-gap:50px;
+
+            width:fit-content;
+            margin:1em auto;
+            font-size:1.5em;
+        }
+        p{
+            margin:10px;    
+            font-size:1em;
+        }
+        .layout{
+            height:400px;
+            float:left;
+        }
+        .layout-adjacent{
+            margin-top:4em;
+            width:800px;
+        }
+    </style>
+    <title>Documentation</title>
+</head>
+<body>
+    <header>
+        <div id="headerspan">
+            <h1 id="headertext">Documentation</h1>
+        </div>
+    </header>
+
+    <div id="documentation-links">
+    <!--        Original Reference: -->
+    <h2><a href="source/source.pdf">Source</a></h2>
+    <h2>|</h2>
+    <!--        Main Site:      -->
+    <h2><a href="spec.html">Spec</a></h2>
+    </div>
+
+    <!--        Site Goal:   -->
+    <h2>Purpose:</h2>
+    <p>My goal is to build a web portfolio as a home to show off my projects to employers and family.
+        I want this to be supplemental to my resume and more representative of who I am as a designer/programmer.
+        I am desigining a personal logo and business card in a seperate class and I plan to use what I'm learning there on my site, potentially having the logo as my favicon.
+    </p>
+    <p>
+        Between the spec and my portfolio, the big changes will be the color scheme and footer. I like the header formatting and main image layout.
+        I also may switch the text from three seperate columns to 1 vertical column and 1 seperate horizontal column under the image describing it.
+    </p>
+
+    <!--        Layouts     -->
+    
+    <img class="layout" src="media/documentation/final-layout.png" alt="Three Column Grid layout">
+    <h2 class="layout-adjacent">Main Layout:</h2>
+    <p>
+        I used a three column layout to mimic the original magazine, with the image taking up the top right 4 squares.
+        Each column is 1fr length, each taking up even space.
+        I ran into trouble getting the text at the end of the first column to wrap to the next so each paragraph is individual. 
+        This was a problem for achieving a look where the text all ends at the same point without cutting it off (which happens in the footer as well).
+        For my website I will make the text below the image span two columns and be seperate text.
+    </p>
+    
+    <br style="clear:both"> <!-- Clearing the float  -->
+
+    <img class="layout" src="media/documentation/smaller-layouts.png" alt="Two and One Column Grid layouts">
+    <h2 class="layout-adjacent">Smaller Layouts:</h2>
+    <p>
+        At a smaller scale the grid should be able to easily collapse down to one column and update the image size.
+        The extra image would need to be repositioned at one column to fully be overlapping the main image.
+    </p>
+
+    <br style="clear:both">
+
+    <!--        Notes:                -->
+    <h2>Additional Notes:</h2>
+    <p>
+        To position the movie poster to the left of the big image, because it has an absolute position and doesn't block text,
+        I floated a div to the position that it took up. Using tools in firefox inspect element I was able to make a custom shape
+        using shape-outside to displace the text in the spot that the image takes up.
+    </p>
+    <p>
+        The edge of the footer has a torn paper effect to it which I can't achieve from just setting the background color, so I used border-radius 
+        to round the corner for a similar effect.
+    </p>
+
+    <!--        Fonts: -->
+    <h2>Fonts:</h2>
+    <pre class="first-paragraph">   
+        Default: Arial, Helvetica, sans-serif
+        Main Body: 'Times New Roman', Times, serif
+    </pre>
+
+    <!--        Images:           -->
+    <h2>Images: </h2>
+    
+    <p>Reddit Post: <a href="https://www.reddit.com/r/indianajones/comments/1jj3qx3/getting_drunk_with_a_monkey_because_the_nazis/">Indiana Jones drinking with his monkey</a></p>
+    <p>AbeBooks: <a href="https://www.abebooks.com/first-edition/Ronald-Reagan-Campaign-Poster-Time-Now/32271680728/bd">"The Time is Now" Reagan Poster</a></p>
+    <p>Amazon: <a href="https://www.amazon.com/Indiana-Raiders-Poster-Unframed-Display/dp/B0857KMB8J">Indiana Jones Movie Poster</a></p>
+    <p>Reference Screenshot: <a href="source/source.pdf">Computer Image</a></p>
+</body>
+</html>
